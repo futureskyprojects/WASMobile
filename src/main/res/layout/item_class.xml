@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/class_item"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/white_bottom_line"
+    android:layout_height="90dp">
+
+    <TextView
+        android:id="@+id/class_student_count"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/blue_round"
+        android:gravity="center"
+        android:text="80"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/class_name"
+        android:layout_toRightOf="@id/class_student_count"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="19sp"
+        android:text="Đại học công nghệ thông tin 3A" />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/class_schoolyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/class_student_count"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:text="2016 - 2012"
+        android:textColor="#90424242"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/class_delete"
+            android:layout_marginEnd="15dp"
+            android:layout_width="30dp"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_danger_round"
+            app:srcCompat="@drawable/delete"/>
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/class_edit"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_warning_round"
+            app:srcCompat="@drawable/pencil"/>
+    </LinearLayout>
+</RelativeLayout>

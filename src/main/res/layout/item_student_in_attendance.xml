@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/attendance_item"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/red_bottom_line"
+    android:layout_height="80dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/student_in_attendance_avatar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="7.5dp"
+        android:src="@drawable/nghia"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/student_in_attendance_avatar"
+        android:orientation="vertical">
+        <TextView
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:shadowColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:id="@+id/student_in_attendance_name"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"
+            android:text="Nguyễn Trọng Nghĩa"
+            android:textSize="24sp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:id="@+id/attendance_stauts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="1"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:shadowColor="@color/colorAccent"
+            android:text="Tỉ lệ vắng 80% (Học 30/45 tiết)"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</RelativeLayout>

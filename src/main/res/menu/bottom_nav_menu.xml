@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/menu_subjects"
+        android:icon="@drawable/book"
+        android:title="Môn" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/menu_class"
+        android:icon="@drawable/class_room"
+        android:title="Lớp" />
+</menu>

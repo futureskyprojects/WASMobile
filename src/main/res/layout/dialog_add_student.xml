@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/actionbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/group_people"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thêm sinh viên"
+            android:textSize="19sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/student_add_dialog_close"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/close"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/border_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <EditText
+            android:id="@+id/student_inp_code"
+            android:hint="Mã sinh viên"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:fontFamily="sans-serif-light"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_round" />
+        <EditText
+            android:id="@+id/student_inp_name"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="19sp"
+            android:layout_marginTop="15dp"
+            android:inputType="textCapWords|textPersonName"
+            android:hint="Họ tên sinh viên"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_round" />
+        <EditText
+            android:id="@+id/student_inp_email"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="19sp"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="Địa chỉ e-mail"
+            android:maxLines="1"
+            android:maxLength="64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text_round" />
+        <Button
+            android:id="@+id/student_btn_add_new_green"
+            android:layout_width="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Thêm sinh viên"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_success_round"/>
+    </LinearLayout>
+
+</LinearLayout>

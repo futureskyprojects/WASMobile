@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/actionbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/book"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Thêm môn giảng dạy"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+        <ImageView
+            android:id="@+id/subject_add_dialog_close"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/close"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/border_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/subject_inp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_round"
+            android:fontFamily="sans-serif-light"
+            android:hint="Tên môn"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/subject_inp_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_round"
+            android:fontFamily="sans-serif-light"
+            android:hint="Thời lượng tiết"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textSize="19sp" />
+        <EditText
+            android:id="@+id/subject_inp_start_time"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="19sp"
+            android:layout_marginTop="15dp"
+            android:inputType="date"
+            android:hint="Ngày bắt đầu. VD: 14/03/2016"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_round" />
+        <EditText
+            android:id="@+id/subject_inp_end_time"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="19sp"
+            android:layout_marginTop="15dp"
+            android:inputType="date"
+            android:hint="Ngày kết thúc. VD: 14/03/2020"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_round" />
+        <EditText
+            android:id="@+id/subject_inp_description"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="19sp"
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            android:hint="Mô tả"
+            android:maxLines="3"
+            android:maxLength="128"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text_round" />
+
+        <Button
+            android:id="@+id/subject_btn_add_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_success_round"
+            android:padding="15dp"
+            android:text="Thêm môn"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
